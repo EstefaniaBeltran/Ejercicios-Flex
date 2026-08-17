@@ -164,6 +164,6 @@ Esta es la misma lógica que usa cualquier lenguaje de programación: un lexer (
 
 ## Pendientes
 
-- [ ] Subir los archivos `.l` y `.y` al repositorio
-- [ ] Agregar capturas de pantalla de la ejecución de cada ejemplo
-- [ ] Seguir documentando otros errores de compilación si aparecen
+- Subir los archivos `.l` y `.y` al repositorio
+- Agregar capturas de pantalla de la ejecución de cada ejemplo
+
