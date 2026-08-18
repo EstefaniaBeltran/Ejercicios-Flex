@@ -41,7 +41,7 @@ cc lex.yy.c ejercicio1.5.tab.c -lfl -o calculadora
 
 ---
 
-## Ejemplo 1.1 — Contador de palabras (`ejemplo1.1.l`)
+## Ejemplo 1.1 — Contador de palabras (`ejercicio1.1.l`)
 
 Es una versión simplificada del comando `wc` de Unix: cuenta líneas, palabras y caracteres de un texto.
 
@@ -62,7 +62,7 @@ Es una versión simplificada del comando `wc` de Unix: cuenta líneas, palabras 
 
 ---
 
-## Ejemplo 1.2 — Traductor de inglés a americano (`ejemplo1.2.l`)
+## Ejemplo 1.2 — Traductor de inglés a americano (`ejercicio1.2.l`)
 
 Reemplaza palabras en inglés británico por su forma americana (`colour` → `color`, `flavour` → `flavor`, etc.). Todo lo que no está en la lista se deja igual.
 
@@ -83,7 +83,7 @@ Reemplaza palabras en inglés británico por su forma americana (`colour` → `c
 
 ---
 
-## Ejemplo 1.3 — Reconocimiento de tokens de la calculadora (`ejemplo1.3.l`)
+## Ejemplo 1.3 — Reconocimiento de tokens de la calculadora (`ejercicio1.3.l`)
 
 Primer paso hacia la calculadora: identifica qué tipo de elemento es cada parte del texto (número, operador, etc.) sin realizar ningún cálculo todavía.
 
@@ -105,7 +105,7 @@ Primer paso hacia la calculadora: identifica qué tipo de elemento es cada parte
 
 ---
 
-## Ejemplo 1.4 — Tokens con valor (`ejemplo1.4.l`)
+## Ejemplo 1.4 — Tokens con valor (`ejercicio1.4.l`)
 
 Evolución del ejemplo 1.3: cada token ahora tiene un número fijo asignado (por ejemplo, `NUMBER = 258`) y, cuando corresponde, un valor asociado guardado en la variable `yylval`.
 
@@ -126,7 +126,7 @@ Evolución del ejemplo 1.3: cada token ahora tiene un número fijo asignado (por
 
 ---
 
-## Ejemplo 1.5 — Calculadora completa con bison (`ejemplo1.5.y`)
+## Ejemplo 1.5 — Calculadora completa con bison (`ejercicio1.5.y`- `ejercicio1.5.l`)
 
 Combina flex y bison: el scanner reconoce los tokens y bison arma la operación matemática completa, respetando que multiplicación y división tienen prioridad sobre suma y resta.
 
