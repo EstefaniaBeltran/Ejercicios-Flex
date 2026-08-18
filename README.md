@@ -53,8 +53,12 @@ Es una versión simplificada del comando `wc` de Unix: cuenta líneas, palabras 
 
 - Entrada `hola` (sin salto de línea) → resultado `0 1 4`. Cuenta 0 líneas porque no hay `\n`; la última línea sin enter no se contabiliza.
 ![Ejercicio 1](imagenes/prueba1.1.png)
+
 - Entrada `hola, mundo!` → cuenta 2 palabras; la coma y el signo se cuentan aparte como caracteres. El patrón de palabra se corta apenas encuentra un carácter que no es letra.
+  ![Ejercicio 1](imagenes/prueba1.2.png)
+  
 - Entrada `tengo 5 gatos` → el `5` no se cuenta como palabra, porque el patrón `[a-zA-Z]+` solo reconoce letras, no dígitos.
+![Ejercicio 1](imagenes/prueba1.3.png)
 
 ---
 
@@ -69,8 +73,13 @@ Reemplaza palabras en inglés británico por su forma americana (`colour` → `c
 ### Pruebas
 
 - Entrada `the colour is nice` → resultado `the color is nice`. Traducción básica.
+![Ejercicio 2](imagenes/prueba2.1.png)
+
 - Entrada `colourful` → resultado `colorful`. Como "colour" está contenido dentro de "colourful", igual se traduce, y el resto ("ful") queda intacto.
+![Ejercicio 2](imagenes/prueba2.2.png)
+
 - Entrada sin ninguna palabra de la lista → sale exactamente igual. Confirma que la regla `.` deja pasar sin cambios todo lo que no reconoce.
+![Ejercicio 2](imagenes/prueba2.3.png)
 
 ---
 
@@ -85,8 +94,14 @@ Primer paso hacia la calculadora: identifica qué tipo de elemento es cada parte
 ### Pruebas
 
 - Entrada `12+34` → resultado `NUMBER 12`, `PLUS`, `NUMBER 34`, `NEWLINE`. Caso básico del libro.
+  ![Ejercicio 3](imagenes/prueba3.1.png)
+  
 - Entrada `5 6 / 7q` → al final imprime `Mystery character q`. El scanner no se detiene ante algo que no reconoce, solo lo reporta y continúa.
+  ![Ejercicio 3](imagenes/prueba3.2.png)
+  
 - Entrada `100000` → resultado `NUMBER 100000`. Confirma que `[0-9]+` no tiene límite de longitud, toma todos los dígitos seguidos.
+![Ejercicio 3](imagenes/prueba3.3.png)
+  
 
 ---
 
@@ -101,8 +116,13 @@ Evolución del ejemplo 1.3: cada token ahora tiene un número fijo asignado (por
 ### Pruebas
 
 - Entrada `a / 34 + |45` → resultado `Mystery character a`, `262`, `258 = 34`, `259`, `263`, `258 = 45`, `264`. Caso exacto del libro, cada símbolo produce su número de token.
+  ![Ejercicio 4](imagenes/prueba4.1.png)
+  
 - Entrada `100 - 5` → resultado `258 = 100`, `260`, `258 = 5`, `264`. Confirma que `yylval` se actualiza correctamente en cada número, sin quedar con el valor anterior.
+    ![Ejercicio 4](imagenes/prueba4.2.png)
+  
 - Entrada `||5` → resultado dos tokens `263` (ABS) seguidos, luego `258 = 5`. El operador de valor absoluto puede repetirse, cada `|` genera su propio token.
+  ![Ejercicio 4](imagenes/prueba4.3.png)
 
 ---
 
@@ -126,7 +146,10 @@ Cada nivel se apoya en el anterior, por eso `2 + 3 * 4` da `14` y no `20`: la mu
 ### Pruebas
 
 - Entrada `2+3*4` → resultado `= 14`. Confirma que la multiplicación se resuelve antes que la suma.
+  ![Ejercicio 5](imagenes/prueba5.1.png)
 - Entrada `10-2-3` → resultado `= 5`. Las operaciones se resuelven de izquierda a derecha.
+    ![Ejercicio 5](imagenes/prueba5.2.png)
+  
 - Entrada `abc` → mensaje de error. La gramática rechaza entradas que no coinciden con ninguna regla, sin romper el programa.
 
 ---
