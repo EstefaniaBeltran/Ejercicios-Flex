@@ -1,5 +1,9 @@
 # Ejercicios-Flex
 Ejercicios de Flex- Grupo 4 
+Yeimy Beltran
+Camilo Bernal
+Yeisson Rincon
+
 # Ejercicios-Flex — Grupo 4
 
 Este repo es para el trabajo de Flex y Bison. Hicimos los primeros 5 ejemplos del libro "flex & bison" (O'Reilly) y acá documentamos qué hace cada uno, cómo funciona el código y qué resultados dieron las pruebas que corrimos.
@@ -21,17 +25,17 @@ sudo apt-get install flex bison
 Ejemplos que son solo flex (1.1 al 1.4):
 
 ```bash
-flex ejemploX.l
-cc lex.yy.c -lfl -o ejemploX
-./ejemploX
+flex ejercicioX.l
+cc lex.yy.c -lfl -o ejercicioX
+./ejercicioX
 ```
 
 Ejemplo 1.5, que junta flex con bison:
 
 ```bash
-bison -d ejemplo1.5.y
-flex ejemplo1.4.l
-cc lex.yy.c ejemplo1.5.tab.c -lfl -o calculadora
+bison -d ejercicio1.5.y
+flex ejercicio1.5.l
+cc lex.yy.c ejercicio1.5.tab.c -lfl -o calculadora
 ./calculadora
 ```
 
