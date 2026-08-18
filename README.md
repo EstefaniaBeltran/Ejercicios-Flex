@@ -1,7 +1,8 @@
 # Ejercicios-Flex
 Ejercicios de Flex- Grupo 4 
-Yeimy Beltran
-Camilo Bernal
+
+Yeimy Beltran - 
+Camilo Bernal - 
 Yeisson Rincon
 
 # Ejercicios-Flex — Grupo 4
