@@ -52,6 +52,7 @@ Es una versión simplificada del comando `wc` de Unix: cuenta líneas, palabras 
 ### Pruebas
 
 - Entrada `hola` (sin salto de línea) → resultado `0 1 4`. Cuenta 0 líneas porque no hay `\n`; la última línea sin enter no se contabiliza.
+![Ejercicio 1](imagenes/prueba1.1.png)
 - Entrada `hola, mundo!` → cuenta 2 palabras; la coma y el signo se cuentan aparte como caracteres. El patrón de palabra se corta apenas encuentra un carácter que no es letra.
 - Entrada `tengo 5 gatos` → el `5` no se cuenta como palabra, porque el patrón `[a-zA-Z]+` solo reconoce letras, no dígitos.
 
