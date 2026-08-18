@@ -1,11 +1,9 @@
-# Ejercicios-Flex
-Ejercicios de Flex- Grupo 4 
+# Ejercicios Flex - Grupo 4
 
 Yeimy Beltran - 
 Camilo Bernal - 
 Yeisson Rincon
 
-# Ejercicios-Flex — Grupo 4
 
 Este repo es para el trabajo de Flex y Bison. Hicimos los primeros 5 ejemplos del libro "flex & bison" (O'Reilly) y acá documentamos qué hace cada uno, cómo funciona el código y qué resultados dieron las pruebas que corrimos.
 
