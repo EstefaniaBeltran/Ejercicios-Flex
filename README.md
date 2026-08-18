@@ -190,8 +190,3 @@ Los cinco ejemplos muestran una progresión clara:
 
 Esta es la misma lógica que usa cualquier lenguaje de programación: un lexer (como flex) separa el código en piezas, y un parser (como bison) entiende cómo esas piezas se combinan.
 
-## Pendientes
-
-- Subir los archivos `.l` y `.y` al repositorio
-- Agregar capturas de pantalla de la ejecución de cada ejemplo
-
